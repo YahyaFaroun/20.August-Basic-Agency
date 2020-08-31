@@ -1,0 +1,249 @@
+@font-face{
+    font-family: 'Scto';
+    src: url('../fonts/SctoGroteskA-Bold.woff2') format('woff2');
+    font-weight: bold;
+}
+@font-face{
+    font-family: 'Scto';
+    src: url('../fonts/SctoGroteskA-Medium.woff2');
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'Scto';
+    src: url('../fonts/SctoGroteskA-Regular.woff2');
+    font-weight: lighter;
+}
+/* .flurry {
+    height: 100vh;
+  }
+.flurry:after {
+    animation: mymove 8s steps(10) infinite;
+    background-image: url("../Img/base.png");
+    content: "";
+    height: 300%;
+    left: -50%;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+    z-index: -2;
+  }
+@keyframes mymove {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+  } */
+
+
+body{
+    font-family: 'Scto';
+    background-image: url(../Img/base.png);
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+body,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+h1{
+    font-size: 6em;
+}
+h3{
+    font-size: 2.4em;
+    word-spacing: 5px;
+    font-weight: 700;
+}
+h6{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+
+
+#hero{
+    margin: 0 5%;
+}
+#hero video{
+    width: 100%;
+}
+#hero hr{
+    margin-top: 20px;
+}
+#hero h1:last-of-type{
+    text-align: right;
+    margin-bottom: 0;
+}
+#hero article{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#hero article div:first-of-type{
+    width: 70%;
+}
+#hero a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#hero a:hover{
+    background-color: #252422;
+    color: #f4f4f4;
+}
+#hero h6{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+
+#basic{
+    margin: 5vh 5% 10vh;
+}
+#basic article{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#basic div:last-of-type{
+    text-align: right;
+}
+#basic img{
+    height: 180px;
+}
+#basic h3{
+    margin-bottom: 30px;
+}
+#basic a:hover{
+    color: #f4f4f4;
+    background-color: #252422;
+}
+#basic hr{
+    margin: 25vh auto 25vh;
+}
+#basic h2{
+    font-size: 2.4em;
+}
+
+
+
+#cards{
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+} 
+#cards div{
+    width: 350px;
+    padding-right: 150px;
+    margin-bottom: 10vh;
+}
+#cards p{
+    font-size: 1.2em;
+}
+#cards img{
+    height: 50px;
+}
+#cards span{
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin: 20px 0 80px;
+}
+#cards h6{
+    text-transform: uppercase;
+}
+#cards div hr{
+    margin: 0;
+    width: 100%;   
+    margin: 20px 0 20px;
+}
+
+
+
+#basicHelps{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    color: #f9cdcd;
+    background-color: #252422;
+    margin: 0;
+    padding: 25vh 5%;
+}
+#basicHelps h1{
+    margin: 0;
+}
+#basicHelps h2{
+    font-size: 3em;
+    line-height: 70px;
+}
+#basicHelps span{
+    font-weight: bold;
+}
+#basicHelps a{
+    border-color: #f9cdcd;
+    color: #f9cdcd;
+}
+#basicHelps h6{margin-bottom: 25vh;}
+#basicHelps a:hover{
+    color: #252422;
+    background-color: #f9cdcd;
+}
+
+
+/*  Pfeile Rechts */
+#news{
+    padding: 0 5%;
+    background-color: #252422;
+    color: #f9cdcd;
+}
+#news hr{
+    color: #f9cdcd;
+    margin-bottom: 5vh;
+}
+#news h2{
+    font-size: 2.4em;
+    line-height: 50px;
+}
+#news h4{
+    font-size: 2.4em;
+    font-weight: normal;
+    margin: 0;
+}
+#news p{
+    font-size: 1em;
+}
+#news article{
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    padding-bottom: 5vh;
+}
+#news article>img{
+    width: 100%;
+}
+#news article>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+#news p span{
+    padding-left: 50px;
+}
+#news article>div:last-of-type{
+    display: flex;
+    align-items: flex-end;
+    
+}
+#news article div img{
+    width: 20%;
+    
+}
